@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hippo-code-agent"
+version = "0.1.0"
+description = "A workspace-scoped AI coding agent powered by Groq"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+hippo = "hippo_agent.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["hippo_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
