@@ -1,4 +1,5 @@
 # Hippo Code Agent
+![Tests](https://github.com/prati31-sys/hippo-code-agent/actions/workflows/tests.yml/badge.svg)
 
 A small, runnable AI coding agent that works inside one selected project folder. It uses Python for orchestration and Groq for model inference. It can inspect and search source files, apply exact edits, run tests, show Git diffs, and report every tool call and result.
 
